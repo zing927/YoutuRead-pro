@@ -14,7 +14,7 @@
   <body class="product-page">
     <div class="noise"></div>
     <header class="site-header">
-      <a class="brand" href="./index.html" aria-label="Zing's Openlife 首页"><img src="./assets/logo.png" alt="Zing" /><span>Zing's Openlife</span></a>
+      <div class="brand-cluster"><a class="brand" href="./index.html" aria-label="Zing's Openlife 首页"><img src="./assets/logo.png" alt="Zing" /><span>Zing's Openlife</span></a><button class="music-toggle is-playing" type="button" aria-label="暂停背景音乐" aria-pressed="true"><span class="music-symbol" aria-hidden="true">♪</span></button></div>
       <nav class="main-nav" aria-label="主导航">
         <a href="./index.html">首页</a>
         <a href="./youturead/index.html">YoutuRead 插件</a>
@@ -199,5 +199,7 @@
       <span>© 2024 YoutuRead. All rights reserved.</span>
       <nav><a href="./privacy.html">隐私政策</a><a href="#">使用条款</a><a href="mailto:zhengjing927@gmail.com">联系我们</a></nav>
     </footer>
+    <audio id="background-music" src="./assets/background-music.wav" loop autoplay preload="auto"></audio>
+    <script>const backgroundMusic=document.querySelector('#background-music');const musicToggle=document.querySelector('.music-toggle');backgroundMusic.volume=0.35;function updateMusicButton(isPlaying){musicToggle.setAttribute('aria-pressed',String(isPlaying));musicToggle.setAttribute('aria-label',isPlaying?'暂停背景音乐':'播放背景音乐');musicToggle.classList.toggle('is-playing',isPlaying)}musicToggle.addEventListener('click',()=>{if(backgroundMusic.paused)backgroundMusic.play().catch(()=>updateMusicButton(false));else backgroundMusic.pause()});backgroundMusic.addEventListener('play',()=>updateMusicButton(true));backgroundMusic.addEventListener('pause',()=>updateMusicButton(false));backgroundMusic.play().catch(()=>updateMusicButton(false));</script>
   </body>
 </html>

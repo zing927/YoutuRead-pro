@@ -11,10 +11,10 @@
   <body class="blog-page">
     <div class="noise"></div>
     <header class="site-header">
-      <a class="brand" href="./index.html" aria-label="Zing's Openlife 首页">
+      <div class="brand-cluster"><a class="brand" href="./index.html" aria-label="Zing's Openlife 首页">
         <img src="./assets/logo.png" alt="Zing" />
         <span>Zing's Openlife</span>
-      </a>
+      </a><button class="music-toggle is-playing" type="button" aria-label="暂停背景音乐" aria-pressed="true"><span class="music-symbol" aria-hidden="true">♪</span></button></div>
       <nav class="main-nav" aria-label="主导航">
         <a href="./index.html">首页</a>
         <a href="./youturead/index.html">YoutuRead 插件</a>
@@ -23,8 +23,7 @@
 
     <main class="blog-main">
       <section class="intro-section">
-        <p class="section-kicker">Openlife / Personal Notes</p>
-        <h1>Hey，欢迎来到<br /><em>我的个人博客。</em></h1>
+        <div class="greeting-row"><div class="lamp" aria-hidden="true"><span class="lamp-wire"></span><svg class="lamp-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-label="A lightbulb with rays" viewBox="-14 0 285 285" role="img"><g transform="translate(0,285) scale(0.1,-0.1)"><path d="M1247 2652c-14-15-17-42-17-150 0-124 1-132 22-146 30-21 44-20 68 4 18 18 20 33 20 145s-2 127-20 145c-25 25-52 26-73 2zM1982 2343c-81-87-142-164-142-179 0-21 37-54 60-54 12 0 33 12 47 28 83 88 163 184 163 195 0 7-7 23-16 35-25 37-61 28-112-25zM475 2320c-27-30-14-55 88-160 96-100 114-107 150-58 25 33 22 38-88 156-83 89-114 102-150 62zM1160 2214c-36-7-106-34-156-59-243-120-387-387-353-656 16-134 63-240 170-389 66-92 105-176 126-273 15-72 15-75-5-103-30-43-35-83-14-129 17-36 17-44 4-77-30-76 19-164 104-187 33-9 44-18 62-55 13-28 37-56 63-73 39-26 50-28 140-28 94 0 98 1 136 31 21 17 49 50 63 74 18 31 35 46 65 56 22 7 55 29 73 48 26 30 32 44 32 82 0 25-5 54-10 65-8 14-7 32 5 66 18 52 13 90-16 127-20 25-20 26 0 110 24 102 60 176 145 299 118 171 150 265 150 432 0 190-59 332-194 466-157 156-374 220-590 173zm285-90c146-38 286-155 354-297 103-215 74-432-87-652-71-95-119-196-146-307l-23-93-44-7c-24-3-54-7-66-7l-23-1v239l49 17c60 20 118 76 132 128 28 103-75 186-168 136-37-20-72-89-81-155l-7-59h-40l-40 0-7 62c-12 110-56 163-138 163-163 0-146-220 21-275l49-17v-239l-62 7c-35 4-66 8-69 10-3 2-9 25-13 51-14 105-56 202-144 332-116 172-142 234-158 377-8 80 17 208 59 294 21 44 56 90 107 140 119 120 232 168 395 169 52 1 116-6 150-15zm-301-679c27-27 47-125 26-125-21 0-69 30-84 52-16 23-21 69-9 81 12 12 51 7 67-8zm374-24c4-38-22-72-69-92-38-15-43-9-34 40 9 56 40 93 74 89 21-2 27-9 29-37zm-178-426v-235h-40v235h40zm-100-311c90-4 181-2 239 5 82 10 96 10 110-3 11-12 13-22 5-43-18-52-47-58-284-58-118 0-232 4-253 8-49 11-75 47-58 84 11 23 15 25 54 19 23-3 107-9 187-12zm55-179c83 0 180 3 217 8 62 7 68 6 78-13 14-27-8-65-48-83-43-19-458-16-496 3-38 20-50 41-42 74 7 26 7 26 74 19 37-5 135-8 217-8zm125-193c0-5-9-17-21-28-15-14-40-20-94-22-69-4-74-3-106 27l-34 30h128c70 0 127-4 127-8zM2080 1650c-25-25-26-52-2-73 15-14 42-17 149-17 142 0 156 5 156 57 0 45-24 53-160 53-110 0-125-2-143-20zM196 1617c-20-29-11-62 20-76 14-6 73-11 132-11 122 0 152 12 152 59 0 47-13 51-157 51-127 0-133-1-147-23z"/></g></svg></div><h1>Hey，欢迎来到<br /><em>我的个人博客。</em></h1></div>
         <p class="intro-lead">我是 Zing，设计学硕士，曾任湖南工学院外聘教师，10+ 产品体验设计师，AI Builder，信息筛选者……</p>
         <blockquote>持续探索个人增长的 X 因素，探索人生 LifeOS</blockquote>
       </section>
@@ -33,7 +32,7 @@
         <div class="section-heading"><h2>正在做的事</h2></div>
         <div class="project-list">
           <article class="project-card"><span class="project-index">01</span><div><h3>分享 Newsletter《无限自然》</h3><p>分享最近 7 天值得分享的内容，关注个人成长、产品设计、AI 提效、商业。累计阅读量 50 万+。</p><a href="https://quaily.com/zing927" target="_blank" rel="noreferrer">去看看 <span>↗</span></a></div></article>
-          <article class="project-card"><span class="project-index">02</span><div><h3>帮助普通人建立自己的信息源系统</h3><p>《独立向上空间》缩短你与全球优质内容的距离。微信公众号 / 小红书 / 知乎同名，每周筛选全球优质内容。</p><a href="https://mp.weixin.qq.com/s/iDI23GVUDVb9yT9MQbaHtA" target="_blank" rel="noreferrer">了解更多 <span>↗</span></a></div></article>
+          <article class="project-card"><span class="project-index">02</span><div><h3>《独立向上空间》主理人</h3><p>缩短你与全球优质内容的距离，帮助普通人建立自己的信息源系统。微信公众号 / 小红书 / 知乎同名，全网累计阅读超 100 万+。</p><a href="https://mp.weixin.qq.com/s/iDI23GVUDVb9yT9MQbaHtA" target="_blank" rel="noreferrer">了解更多 <span>↗</span></a></div></article>
           <article class="project-card"><span class="project-index">03</span><div><h3>搭建知识库《探索个人增长的 X 因素》</h3><p>分享个人增长的优质信息源、精读内容、学习资源、工具公开分享，目前已有 40+ 付费用户，99 元 / 年。</p><a href="https://flowus.cn/zing/share/aa202f8a-14a7-4429-a5a8-2b459a4de181?code=U4N4HU" target="_blank" rel="noreferrer">进入知识库 <span>↗</span></a></div></article>
           <article class="project-card"><span class="project-index">04</span><div><h3>AI Builder：探索小而美</h3><p>目前做了一个 YouTube 学习插件 YoutuRead，把 YouTube 视频转成更适合阅读、理解和复习的内容，已上架 Chrome 应用商店。</p><a href="./youturead/index.html">了解 YoutuRead <span>↗</span></a></div></article>
         </div>
@@ -49,12 +48,29 @@
       </section>
 
       <section class="contact-section">
-        <p class="section-kicker">Let's stay connected</p>
         <h2>如果你也在探索<br /><em>自己的 Openlife</em></h2>
-        <div class="contact-links"><a href="mailto:zhengjing927@gmail.com">zhengjing927@gmail.com <span>↗</span></a><span>微信：zing927</span></div>
+        <div class="contact-links"><a href="mailto:zhengjing927@gmail.com">zhengjing927@gmail.com</a><span>微信：zing927</span></div>
       </section>
     </main>
 
     <footer><b>Zing's Openlife</b><span>© 2026 Zing</span></footer>
+    <audio id="background-music" src="./assets/background-music.wav" loop autoplay preload="auto"></audio>
+    <script>
+      const backgroundMusic = document.querySelector("#background-music");
+      const musicToggle = document.querySelector(".music-toggle");
+      backgroundMusic.volume = 0.35;
+      function updateMusicButton(isPlaying) {
+        musicToggle.setAttribute("aria-pressed", String(isPlaying));
+        musicToggle.setAttribute("aria-label", isPlaying ? "暂停背景音乐" : "播放背景音乐");
+        musicToggle.classList.toggle("is-playing", isPlaying);
+      }
+      musicToggle.addEventListener("click", () => {
+        if (backgroundMusic.paused) backgroundMusic.play().catch(() => updateMusicButton(false));
+        else backgroundMusic.pause();
+      });
+      backgroundMusic.addEventListener("play", () => updateMusicButton(true));
+      backgroundMusic.addEventListener("pause", () => updateMusicButton(false));
+      backgroundMusic.play().catch(() => updateMusicButton(false));
+    </script>
   </body>
 </html>
