@@ -1823,6 +1823,7 @@ blockquote {
 .blog-page .project-card h3 { margin: 0 0 10px; color: var(--home-ink); font-size: 18px; font-weight: 600; line-height: 1.4; }
 .blog-page .project-card p { margin: 0 0 16px; color: var(--home-muted); font-size: 14px; line-height: 1.72; }
 .blog-page .project-card a { font-size: 13px; }
+.blog-page .project-links { display: flex; flex-wrap: wrap; gap: 14px 20px; }
 .blog-page .vision-section { padding-top: 72px; }
 .blog-page .vision-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .blog-page .vision-grid article { min-height: 196px; padding: 24px; border: 1px solid var(--home-rule); border-radius: 12px; background: transparent; }
