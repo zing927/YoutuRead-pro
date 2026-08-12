@@ -1,32 +1,66 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YoutuRead - YouTube 转阅读版插件</title>
-    <meta name="description" content="YoutuRead 是一款将 YouTube 视频转化为结构化图文笔记的效率插件。" />
-    <link rel="icon" href="../assets/favicon.ico" />
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body class="product-page">
-    <div class="noise"></div>
-    <header class="site-header">
-      <div class="brand-cluster"><a class="brand" href="../index.html" aria-label="Zing's Openlife 首页"><img src="../assets/logo.png" alt="Zing" /><span>Zing's Openlife</span></a><button class="music-toggle is-playing" type="button" aria-label="暂停背景音乐" aria-pressed="true"><span class="music-symbol" aria-hidden="true">♪</span></button></div>
-      <nav class="main-nav" aria-label="主导航"><a href="../index.html">首页</a><a href="./index.html" aria-current="page">YoutuRead 插件</a></nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-copy"><h1>将全球优质视频，<br />一键转化为<br /><strong>结构化的图文笔记</strong></h1><p class="hero-text">不用再花几十分钟硬看长视频，也不用被英语听力卡住。YoutuRead 直接帮你提炼重点、截图和时间戳。</p><div class="trust-row"><div><span>✓</span><b>一次购买</b></div><div><span>✓</span><b>永久买断</b></div><div><span>✓</span><b>安全可靠</b></div></div></div>
-        <figure class="product-stage"><img src="../assets/product-preview.png" alt="YoutuRead 在 YouTube 视频页侧边栏中的产品界面截图" /></figure>
-      </section>
-      <section class="pro-panel"><h2>为深度学习和创作而生</h2><div class="plan-compare"><article class="plan-card basic-plan"><div class="plan-head"><h3>基础用户</h3><p>免费体验</p></div><div class="plan-price">¥0</div><ul><li>每天 3 次生成</li><li>基础视频摘要</li><li>关键要点提取</li><li class="muted">不支持自定义提示词</li><li class="muted">不支持图片导出</li></ul></article><article class="plan-card pro-plan"><div class="plan-badge">推荐</div><div class="plan-head"><h3>Pro 会员</h3><p>永久买断</p></div><div class="plan-price"><strong>49.9元</strong><del>原价 156元</del><span>少喝两杯咖啡，换来一个硬核的 AI 学习工具。</span></div><a class="plan-button js-open-payment" href="#payment">立即解锁 Pro</a><ul><li>无限次数生成</li><li>顶尖模型总结</li><li>自定义提示词</li><li>编辑、复制 Markdown 笔记</li><li>导出 3:4 分享图片，支持自定义风格</li></ul></article></div></section>
-      <section class="audience" id="audience"><h2>适合每天从视频中获取高价值信息的人</h2><div class="audience-grid"><article><span>✦</span><h3>学生</h3><p>高效学习<br />提升成绩</p></article><article><span>♙</span><h3>研究者</h3><p>文献调研<br />快速吸收</p></article><article><span>✐</span><h3>创作者</h3><p>获取灵感<br />丰富内容</p></article><article><span>☑</span><h3>策划 / PM</h3><p>市场洞察<br />竞品分析</p></article><article><span>⌘</span><h3>职场人士</h3><p>提升效率<br />持续成长</p></article><article><span>⌁</span><h3>分析师</h3><p>深度研究<br />输出报告</p></article></div></section>
-      <section class="faq-section" id="faq"><h2>常见问题</h2><div class="faq-list"><article><h3>YoutuRead 支持哪些 YouTube 视频？</h3><p>正常播放的视频通常都支持。开启字幕或文字稿，效果会更稳定。</p></article><article><h3>生成的笔记包含哪些内容？</h3><p>摘要、要点、时间戳、关键帧截图和 Markdown 文本。</p></article><article><h3>普通用户和 Pro 会员有什么区别？</h3><p>Pro 解锁无限生成、自定义提示词、编辑复制和图片导出，且可为导出图片设置自定义风格。</p></article><article><h3>购买后如何获得授权码？</h3><p>付款后联系作者，发送支付截图或订单信息即可。</p></article></div></section>
-      <section class="about-section" id="about"><h2>关于我们</h2><p>YoutuRead 由终身学习者、独立开发者打造，让优质视频变成可以检索、复盘、编辑和分享的知识资产。</p><div class="contact-list" aria-label="联系方式"><a href="mailto:zhengjing927@gmail.com">邮箱：zhengjing927@gmail.com</a><span>微信：zing927</span></div><h3>Stop Watching. Start Reading.</h3><p>把时间留给思考，而不是等待视频播放。</p></section>
-    </main>
-    <footer><b>YoutuRead</b><span>© 2026 Zing</span><a href="./privacy.html">隐私政策</a></footer>
-    <div class="payment-modal" id="payment" aria-hidden="true"><div class="modal-backdrop" data-close-payment></div><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="payment-title"><button class="modal-close" type="button" aria-label="关闭支付弹窗" data-close-payment>×</button><h2 id="payment-title">选择支付方式</h2><p class="modal-subtitle">永久会员 ¥49.9，一次购买，永久买断。</p><div class="payment-options"><div class="payment-option wechat"><img class="qr-code" src="../assets/wechat-pay.jpg" alt="微信收款码" /><b>微信支付</b></div><div class="payment-option alipay"><img class="qr-code" src="../assets/alipay-pay.jpg" alt="支付宝收款码" /><b>支付宝支付</b></div></div><div class="payment-notice"><b>支付成功后</b><p>请添加作者微信 zing927，并发送支付截图或订单信息，作者会为你发放 Pro 授权码。</p></div></section></div>
-    <audio id="background-music" src="../assets/background-music.wav" loop autoplay preload="auto"></audio>
-    <script>const modal=document.querySelector('.payment-modal');document.querySelectorAll('.js-open-payment').forEach((b)=>b.addEventListener('click',(e)=>{e.preventDefault();modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open')}));document.querySelectorAll('[data-close-payment]').forEach((b)=>b.addEventListener('click',()=>{modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')}));document.addEventListener('keydown',(e)=>{if(e.key==='Escape'){modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')}});const backgroundMusic=document.querySelector('#background-music');const musicToggle=document.querySelector('.music-toggle');backgroundMusic.volume=0.35;function updateMusicButton(isPlaying){musicToggle.setAttribute('aria-pressed',String(isPlaying));musicToggle.setAttribute('aria-label',isPlaying?'暂停背景音乐':'播放背景音乐');musicToggle.classList.toggle('is-playing',isPlaying)}musicToggle.addEventListener('click',()=>{if(backgroundMusic.paused)backgroundMusic.play().catch(()=>updateMusicButton(false));else backgroundMusic.pause()});backgroundMusic.addEventListener('play',()=>updateMusicButton(true));backgroundMusic.addEventListener('pause',()=>updateMusicButton(false));backgroundMusic.play().catch(()=>updateMusicButton(false));</script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YoutuRead Pro｜把视频变成你的第二大脑</title>
+  <meta name="description" content="YoutuRead Pro 将 YouTube 视频转化为结构化、可检索、可复用的知识笔记。一次购买，永久使用。" />
+  <link rel="icon" href="../assets/favicon.ico" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="product-page">
+  <div class="noise"></div>
+  <header class="site-header">
+    <div class="brand-cluster">
+      <a class="brand" href="../index.html" aria-label="Zing's Openlife 首页"><img src="../assets/logo.png" alt="Zing" /><span>Zing's Openlife</span></a>
+      <button class="music-toggle is-playing" type="button" aria-label="暂停背景音乐" aria-pressed="true"><span class="music-symbol">♪</span></button>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="./index.html">YoutuRead 插件</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="yt-hero" id="product">
+      <div class="yt-hero-copy">
+        <div class="section-kicker">YOUTUREAD PRO · KNOWLEDGE WORKFLOW</div>
+        <h1>你不需要看完<br /><em>每一个视频。</em></h1>
+        <p class="hero-text">你需要的是一层更聪明的阅读界面。YoutuRead 把 YouTube 的长视频，变成一份有结构、有重点、能带走的知识资产。</p>
+        <div class="hero-actions"><a class="primary-cta" href="#pricing" data-open-payment><span>把下一个视频变成笔记</span><b>¥49.9 ↗</b></a><a class="text-link" href="#workflow">看看它如何工作 <span>↓</span></a></div>
+        <div class="hero-proof"><span><b>一次购买</b><small>永久使用</small></span><span><b>Markdown</b><small>随时带走</small></span><span><b>隐私优先</b><small>你的内容归你</small></span></div>
+      </div>
+      <figure class="product-stage"><div class="stage-label">从播放，到理解</div><img src="../assets/product-preview.png" alt="YoutuRead 在 YouTube 视频页侧边栏中的产品界面截图" /></figure>
+    </section>
+
+    <section class="yt-stats" aria-label="产品价值"><div><strong>10×</strong><span>更快定位重点</span></div><div><strong>1 click</strong><span>生成完整笔记</span></div><div><strong>∞</strong><span>持续积累知识库</span></div><p>为认真吸收信息的人，打造的 YouTube 阅读层</p></section>
+
+    <section class="yt-problem"><div class="section-kicker">THE REAL PROBLEM</div><h2>内容越来越多，<br /><em>但你的时间没有变多。</em></h2><div class="problem-grid"><article><b>01</b><h3>看过 ≠ 掌握</h3><p>长视频里真正有价值的，往往只占一小部分。先看结构，再决定是否深入。</p></article><article><b>02</b><h3>灵感无法复用</h3><p>没有时间戳、关键词和上下文，精彩观点很快就会从记忆里消失。</p></article><article><b>03</b><h3>信息难以沉淀</h3><p>把一次观看变成可搜索、可编辑、可引用的个人知识资产。</p></article></div></section>
+
+    <section class="yt-workflow" id="workflow"><div class="section-kicker">A BETTER WAY TO LEARN</div><h2>三步，把观看变成<br /><em>真正属于你的理解。</em></h2><div class="workflow-cards"><article><span>01</span><h3>打开一个 YouTube 视频</h3><p>课程、访谈、演讲、技术分享，任何值得学习的内容都可以。</p></article><article><span>02</span><h3>点击 YoutuRead</h3><p>自动提取摘要、章节、关键观点、时间戳和关键画面。</p></article><article><span>03</span><h3>阅读、编辑、带走</h3><p>调整成你的笔记，复制 Markdown，沉淀进自己的知识系统。</p></article></div></section>
+
+    <section class="yt-feature"><div class="feature-copy"><div class="section-kicker">NOT JUST A SUMMARY</div><h2>不是替你看视频，<br /><em>而是帮你看懂视频。</em></h2><p>YoutuRead 不只给你一段摘要。它保留内容的结构与上下文，让你快速判断、深度阅读，并把好观点留在自己的系统里。</p><div class="feature-list"><div><b>01</b><span><strong>结构化提炼</strong><small>摘要、章节、观点一目了然</small></span></div><div><b>02</b><span><strong>时间戳关联</strong><small>从笔记一键回到原视频现场</small></span></div><div><b>03</b><span><strong>Markdown 导出</strong><small>接入 Obsidian、Notion 或任何编辑器</small></span></div></div></div><div class="feature-quote"><span>“</span><p>把分散在世界各处的优质内容，变成你可以反复调用的思考素材。</p><small>— YoutuRead 的设计目标</small></div></section>
+
+    <section class="yt-pricing" id="pricing"><div class="pricing-intro"><div class="section-kicker">SIMPLE, HONEST PRICING</div><h2>一次购买，<br /><em>永久拥有。</em></h2><p>不用订阅，不用每月计算成本。把一件每天都会用到的工具，变成长期生产力。</p></div><div class="pricing-card"><div class="pricing-badge">RECOMMENDED · PRO</div><div class="price-top"><div><small>YoutuRead Pro</small><strong>¥49.9</strong><del>¥156</del></div><p>少刷几次无意义的内容，换来一个真正帮你学习的工具。</p></div><a class="plan-button" href="#payment" data-open-payment>立即解锁 Pro <span>↗</span></a><ul><li>无限次数生成笔记</li><li>高质量模型总结</li><li>自定义提示词，按你的方式提炼</li><li>编辑、复制 Markdown 笔记</li><li>导出 3:4 分享图片，自定义风格</li><li>一次购买，永久使用</li></ul><small class="pricing-note">付款后添加微信 zing927，发送支付截图即可获得授权码。</small></div></section>
+
+    <section class="yt-audience"><div class="section-kicker">MADE FOR PEOPLE WHO LEARN</div><h2>如果你每天都在获取信息，<br /><em>YoutuRead 就值得在手边。</em></h2><div class="audience-grid"><article><span>⌘</span><h3>学生 / 研究者</h3><p>快速预览课程、讲座与研究内容。</p></article><article><span>✦</span><h3>创作者 / 策划</h3><p>提炼灵感，建立自己的素材库。</p></article><article><span>↗</span><h3>产品 / 职场人</h3><p>把行业信息变成可执行洞察。</p></article><article><span>∞</span><h3>终身学习者</h3><p>让每一次观看都产生复利。</p></article></div></section>
+
+    <section class="yt-faq" id="faq"><div class="section-kicker">QUESTIONS, ANSWERED</div><h2>购买前，<em>你可能想知道。</em></h2><div class="faq-list"><article><h3>支持哪些 YouTube 视频？</h3><p>正常播放且有字幕或文字稿的视频通常都支持，开启字幕后效果更稳定。</p></article><article><h3>生成的笔记包含什么？</h3><p>摘要、章节、核心观点、时间戳、关键画面与 Markdown 文本。</p></article><article><h3>购买后如何使用？</h3><p>支付后添加微信 zing927，发送支付截图或订单信息，即可获得 Pro 授权码。</p></article><article><h3>我的内容安全吗？</h3><p>YoutuRead 只处理你主动打开并生成的内容，不建立你的观看历史画像。</p></article></div></section>
+
+    <section class="yt-final"><h2>下次打开视频时，<br /><em>让它留下点什么。</em></h2><p>从今天开始，把“看过”变成“拥有”。</p><a class="primary-cta" href="#pricing" data-open-payment><span>立即解锁 YoutuRead Pro</span><b>¥49.9 ↗</b></a><div class="contact-list"><a href="mailto:zhengjing927@gmail.com">zhengjing927@gmail.com</a><span>微信：zing927</span></div></section>
+  </main>
+  <footer><b>YoutuRead</b><span>© 2026 Zing</span><a href="./privacy.html">隐私政策</a></footer>
+
+  <div class="payment-modal" id="payment" aria-hidden="true"><div class="modal-backdrop" data-close-payment></div><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="payment-title"><button class="modal-close" type="button" aria-label="关闭支付弹窗" data-close-payment>×</button><h2 id="payment-title">选择支付方式</h2><p class="modal-subtitle">永久会员 ¥49.9，一次购买，永久买断。</p><div class="payment-options"><div class="payment-option wechat"><img class="qr-code" src="../assets/wechat-pay.jpg" alt="微信收款码" /><b>微信支付</b></div><div class="payment-option alipay"><img class="qr-code" src="../assets/alipay-pay.jpg" alt="支付宝收款码" /><b>支付宝支付</b></div></div><div class="payment-notice"><b>支付成功后</b><p>请添加作者微信 zing927，并发送支付截图或订单信息，作者会为你发放 Pro 授权码。</p></div></section></div>
+  <audio id="background-music" src="../assets/background-music.wav" loop autoplay preload="auto"></audio>
+  <script>
+    const modal = document.querySelector('.payment-modal');
+    document.querySelectorAll('[data-open-payment]').forEach((button) => button.addEventListener('click', (event) => { event.preventDefault(); modal.setAttribute('aria-hidden', 'false'); document.body.classList.add('modal-open'); }));
+    document.querySelectorAll('[data-close-payment]').forEach((button) => button.addEventListener('click', () => { modal.setAttribute('aria-hidden', 'true'); document.body.classList.remove('modal-open'); }));
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape') { modal.setAttribute('aria-hidden', 'true'); document.body.classList.remove('modal-open'); } });
+    const backgroundMusic = document.querySelector('#background-music'); const musicToggle = document.querySelector('.music-toggle'); backgroundMusic.volume = .35;
+    function updateMusicButton(playing) { musicToggle.setAttribute('aria-pressed', String(playing)); musicToggle.setAttribute('aria-label', playing ? '暂停背景音乐' : '播放背景音乐'); musicToggle.classList.toggle('is-playing', playing); }
+    musicToggle.addEventListener('click', () => backgroundMusic.paused ? backgroundMusic.play().catch(() => updateMusicButton(false)) : backgroundMusic.pause()); backgroundMusic.addEventListener('play', () => updateMusicButton(true)); backgroundMusic.addEventListener('pause', () => updateMusicButton(false)); backgroundMusic.play().catch(() => updateMusicButton(false));
+  </script>
+</body>
 </html>
