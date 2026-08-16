@@ -6,15 +6,27 @@
     <title>Zing‘s Openlife</title>
     <meta name="description" content="Zing's Openlife：个人增长、产品设计、AI 提效与长期主义。" />
     <link rel="icon" href="./assets/favicon.ico" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260816" />
   </head>
   <body class="blog-page">
     <div class="noise"></div>
+    <div class="sunlit-ambient" aria-hidden="true">
+      <div class="sunlit-glow"></div>
+      <div class="sunlit-glow-bounce"></div>
+      <div class="sunlit-perspective">
+        <div class="sunlit-foliage sunlit-foliage-back"></div>
+        <div class="sunlit-foliage sunlit-foliage-front"></div>
+        <div class="sunlit-blinds"></div>
+      </div>
+      <div class="sunlit-progressive-blur">
+        <div></div><div></div><div></div><div></div>
+      </div>
+    </div>
     <header class="site-header">
       <div class="brand-cluster"><a class="brand" href="./index.html" aria-label="Zing's Openlife 首页">
         <img src="./assets/logo.png" alt="Zing" />
         <span>Zing's Openlife</span>
-      </a><button class="music-toggle is-playing" type="button" aria-label="暂停背景音乐" aria-pressed="true"><span class="music-symbol" aria-hidden="true">♪</span></button></div>
+      </a><button class="music-toggle is-playing" type="button" aria-label="暂停背景音乐" aria-pressed="true"><span class="music-symbol" aria-hidden="true">♪</span></button><button class="ambience-toggle" type="button" aria-label="切换为暮色" aria-pressed="false"><span aria-hidden="true">☀</span></button></div>
       <nav class="main-nav" aria-label="主导航">
         <a href="./index.html">首页</a>
         <a href="./youturead/index.html">YoutuRead 插件</a>
@@ -24,8 +36,36 @@
     <main class="blog-main">
       <section class="intro-section">
         <div class="greeting-row"><div class="lamp" aria-hidden="true"><span class="lamp-wire"></span><svg class="lamp-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-label="A lightbulb with rays" viewBox="-14 0 285 285" role="img"><g transform="translate(0,285) scale(0.1,-0.1)"><path d="M1247 2652c-14-15-17-42-17-150 0-124 1-132 22-146 30-21 44-20 68 4 18 18 20 33 20 145s-2 127-20 145c-25 25-52 26-73 2zM1982 2343c-81-87-142-164-142-179 0-21 37-54 60-54 12 0 33 12 47 28 83 88 163 184 163 195 0 7-7 23-16 35-25 37-61 28-112-25zM475 2320c-27-30-14-55 88-160 96-100 114-107 150-58 25 33 22 38-88 156-83 89-114 102-150 62zM1160 2214c-36-7-106-34-156-59-243-120-387-387-353-656 16-134 63-240 170-389 66-92 105-176 126-273 15-72 15-75-5-103-30-43-35-83-14-129 17-36 17-44 4-77-30-76 19-164 104-187 33-9 44-18 62-55 13-28 37-56 63-73 39-26 50-28 140-28 94 0 98 1 136 31 21 17 49 50 63 74 18 31 35 46 65 56 22 7 55 29 73 48 26 30 32 44 32 82 0 25-5 54-10 65-8 14-7 32 5 66 18 52 13 90-16 127-20 25-20 26 0 110 24 102 60 176 145 299 118 171 150 265 150 432 0 190-59 332-194 466-157 156-374 220-590 173zm285-90c146-38 286-155 354-297 103-215 74-432-87-652-71-95-119-196-146-307l-23-93-44-7c-24-3-54-7-66-7l-23-1v239l49 17c60 20 118 76 132 128 28 103-75 186-168 136-37-20-72-89-81-155l-7-59h-40l-40 0-7 62c-12 110-56 163-138 163-163 0-146-220 21-275l49-17v-239l-62 7c-35 4-66 8-69 10-3 2-9 25-13 51-14 105-56 202-144 332-116 172-142 234-158 377-8 80 17 208 59 294 21 44 56 90 107 140 119 120 232 168 395 169 52 1 116-6 150-15zm-301-679c27-27 47-125 26-125-21 0-69 30-84 52-16 23-21 69-9 81 12 12 51 7 67-8zm374-24c4-38-22-72-69-92-38-15-43-9-34 40 9 56 40 93 74 89 21-2 27-9 29-37zm-178-426v-235h-40v235h40zm-100-311c90-4 181-2 239 5 82 10 96 10 110-3 11-12 13-22 5-43-18-52-47-58-284-58-118 0-232 4-253 8-49 11-75 47-58 84 11 23 15 25 54 19 23-3 107-9 187-12zm55-179c83 0 180 3 217 8 62 7 68 6 78-13 14-27-8-65-48-83-43-19-458-16-496 3-38 20-50 41-42 74 7 26 7 26 74 19 37-5 135-8 217-8zm125-193c0-5-9-17-21-28-15-14-40-20-94-22-69-4-74-3-106 27l-34 30h128c70 0 127-4 127-8zM2080 1650c-25-25-26-52-2-73 15-14 42-17 149-17 142 0 156 5 156 57 0 45-24 53-160 53-110 0-125-2-143-20zM196 1617c-20-29-11-62 20-76 14-6 73-11 132-11 122 0 152 12 152 59 0 47-13 51-157 51-127 0-133-1-147-23z"/></g></svg></div><h1>Hey，欢迎来到<br /><em>我的个人博客。</em></h1></div>
-        <p class="intro-lead">我是 Zing，设计学硕士，曾任湖南工学院外聘教师，10+ 产品体验设计师，AI Builder，信息筛选者……</p>
-        <blockquote>持续探索个人增长的 X 因素，探索人生 LifeOS</blockquote>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <h1>“When you share，<br />Magic happen”</h1>
+            <div class="identity-tags" aria-label="身份标签">
+              <span>设计学硕士</span><span>湖南外聘教师</span><span>产品体验设计师</span><span>AI Builder</span><span>信息筛选者</span><span>杭州 / 兰溪</span>
+            </div>
+            <div class="hero-actions">
+              <span class="hero-action-primary">微信号：zing927</span>
+              <a class="hero-action-secondary" href="#now">查看作品 <span>↓</span></a>
+            </div>
+          </div>
+          <figure class="hero-photo" aria-label="个人照片">
+            <img class="hero-portrait" src="./assets/hero-portrait-office.png" alt="窗边办公场景肖像" />
+            <figcaption>PORTRAIT · OFFICE STUDY</figcaption>
+          </figure>
+        </div>
+        <p class="intro-lead">产品体验设计师 · AI Builder · 信息筛选者<br />湖南 · Since 2014</p>
+        <blockquote>用设计与技术做杠杆，让好奇心成为长期资产。</blockquote>
+      </section>
+
+      <section class="studio-metrics" aria-label="关键数据">
+        <div><span>METRIC · 01</span><strong>10<sup>+</sup></strong><p>产品体验设计年限</p></div>
+        <div><span>METRIC · 02</span><strong>50<sup>万+</sup></strong><p>Newsletter 累计阅读</p></div>
+        <div><span>METRIC · 03</span><strong>100<sup>万+</sup></strong><p>全网内容累计阅读</p></div>
+      </section>
+
+      <section class="studio-epigraph">
+        <p>— EPIGRAPH · 卷首语 —</p>
+        <blockquote>“持续探索个人增长的 X 因素，探索人生 LifeOS。”</blockquote>
+        <span>Zing · 2026</span>
       </section>
 
       <section class="blog-section" id="now">
@@ -48,7 +88,7 @@
       </section>
 
       <section class="contact-section">
-        <h2>如果你也在探索<br /><em>自己的 Openlife</em></h2>
+        <h2>如果你也在探索<em>自己的 Openlife</em></h2>
         <div class="contact-links"><a href="mailto:zhengjing927@gmail.com">zhengjing927@gmail.com</a><span>微信：zing927</span></div>
       </section>
     </main>
@@ -58,6 +98,7 @@
     <script>
       const backgroundMusic = document.querySelector("#background-music");
       const musicToggle = document.querySelector(".music-toggle");
+      const ambienceToggle = document.querySelector(".ambience-toggle");
       backgroundMusic.volume = 0.35;
       function updateMusicButton(isPlaying) {
         musicToggle.setAttribute("aria-pressed", String(isPlaying));
@@ -71,6 +112,40 @@
       backgroundMusic.addEventListener("play", () => updateMusicButton(true));
       backgroundMusic.addEventListener("pause", () => updateMusicButton(false));
       backgroundMusic.play().catch(() => updateMusicButton(false));
+
+      function applyAmbience(isNight, animate = true) {
+        document.body.classList.remove("sunset-mode", "sunrise-mode");
+        if (isNight) document.body.classList.add("sunset-mode");
+        else if (animate) document.body.classList.add("sunrise-mode");
+        ambienceToggle.setAttribute("aria-pressed", String(isNight));
+        ambienceToggle.setAttribute("aria-label", isNight ? "切换为日光" : "切换为暮色");
+        ambienceToggle.querySelector("span").textContent = isNight ? "☾" : "☀";
+      }
+
+      function syncAmbienceWithClock(animate = false) {
+        const hour = new Date().getHours();
+        applyAmbience(hour >= 18 || hour < 6, animate);
+      }
+
+      function scheduleAmbienceSync() {
+        const now = new Date();
+        const next = new Date(now);
+        const hour = now.getHours();
+        next.setHours(hour < 6 ? 6 : hour < 18 ? 18 : 6, 0, 0, 0);
+        if (next <= now) next.setDate(next.getDate() + 1);
+        window.setTimeout(() => {
+          syncAmbienceWithClock(true);
+          scheduleAmbienceSync();
+        }, next - now + 50);
+      }
+
+      syncAmbienceWithClock();
+      scheduleAmbienceSync();
+
+      ambienceToggle.addEventListener("click", () => {
+        const isDusk = !document.body.classList.contains("sunset-mode");
+        applyAmbience(isDusk);
+      });
     </script>
   </body>
 </html>
